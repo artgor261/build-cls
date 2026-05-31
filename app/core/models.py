@@ -29,3 +29,4 @@ class CulturalObject(Base):
     style = Column(String(255), default="")
     latitude = Column(Float, nullable=True)
     longitude = Column(Float, nullable=True)
+    image_url = Column(String(512), default="")

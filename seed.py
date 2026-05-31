@@ -16,6 +16,7 @@ DATA = [
         "style": "Классицизм",
         "latitude": 55.7601,
         "longitude": 37.6186,
+        "image_url": "/static/photos/bolshoi_theater.jpg",
     },
     {
         "name": "christ_spasitel",
@@ -27,6 +28,7 @@ DATA = [
         "style": "Русско-византийский",
         "latitude": 55.7446,
         "longitude": 37.6055,
+        "image_url": "/static/photos/christ_spasitel.jpg",
     },
     {
         "name": "tretiakovskaya_gal",
@@ -38,6 +40,7 @@ DATA = [
         "style": "Неорусский",
         "latitude": 55.7415,
         "longitude": 37.6208,
+        "image_url": "/static/photos/tretiakovskaya_gal.jpg",
     },
     {
         "name": "vasiliy_blazhenov",
@@ -49,6 +52,7 @@ DATA = [
         "style": "Русское зодчество",
         "latitude": 55.7525,
         "longitude": 37.6231,
+        "image_url": "/static/photos/vasiliy_blazhenov.jpg",
     },
     {
         "name": "visotka_kotel",
@@ -60,6 +64,7 @@ DATA = [
         "style": "Сталинский ампир",
         "latitude": 55.7472,
         "longitude": 37.6428,
+        "image_url": "/static/photos/visotka_kotel.jpg",
     },
 ]
 

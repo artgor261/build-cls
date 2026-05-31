@@ -39,6 +39,7 @@ class ObjectResponse(BaseModel):
     style: str = ""
     latitude: float | None = None
     longitude: float | None = None
+    image_base64: str | None = None
 
     model_config = {"from_attributes": True}
 

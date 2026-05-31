@@ -7,8 +7,9 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.config import settings
 from app.crud.object import get_object_by_name
 from app.core.database import get_db
-from app.core.schemas import ObjectResponse, RecognizeResponse
+from app.core.schemas import RecognizeResponse
 from app.services.classifier import predict
+from app.services.images import to_response
 
 router = APIRouter(prefix="/recognize", tags=["recognize"])
 
@@ -32,5 +33,5 @@ async def recognize(file: UploadFile, db: AsyncSession = Depends(get_db)):
 
     return RecognizeResponse(
         class_name=class_name,
-        object=ObjectResponse.model_validate(obj) if obj else None,
+        object=to_response(obj) if obj else None,
     )
