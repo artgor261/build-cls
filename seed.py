@@ -14,6 +14,8 @@ DATA = [
         "year_built": 1825,
         "architect": "Осип Бове",
         "style": "Классицизм",
+        "latitude": 55.7601,
+        "longitude": 37.6186,
     },
     {
         "name": "christ_spasitel",
@@ -23,6 +25,8 @@ DATA = [
         "year_built": 2000,
         "architect": "Константин Тон",
         "style": "Русско-византийский",
+        "latitude": 55.7446,
+        "longitude": 37.6055,
     },
     {
         "name": "tretiakovskaya_gal",
@@ -32,6 +36,8 @@ DATA = [
         "year_built": 1856,
         "architect": "Виктор Васнецов",
         "style": "Неорусский",
+        "latitude": 55.7415,
+        "longitude": 37.6208,
     },
     {
         "name": "vasiliy_blazhenov",
@@ -41,6 +47,8 @@ DATA = [
         "year_built": 1561,
         "architect": "Барма и Постник",
         "style": "Русское зодчество",
+        "latitude": 55.7525,
+        "longitude": 37.6231,
     },
     {
         "name": "visotka_kotel",
@@ -50,6 +58,8 @@ DATA = [
         "year_built": 1952,
         "architect": "Дмитрий Чечулин",
         "style": "Сталинский ампир",
+        "latitude": 55.7472,
+        "longitude": 37.6428,
     },
 ]
 

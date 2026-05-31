@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text
+from sqlalchemy import Column, Float, Integer, String, Text
 from sqlalchemy.orm import DeclarativeBase
 
 
@@ -27,3 +27,5 @@ class CulturalObject(Base):
     year_built = Column(Integer, nullable=True)
     architect = Column(String(255), default="")
     style = Column(String(255), default="")
+    latitude = Column(Float, nullable=True)
+    longitude = Column(Float, nullable=True)

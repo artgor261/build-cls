@@ -37,6 +37,8 @@ class ObjectResponse(BaseModel):
     year_built: int | None = None
     architect: str = ""
     style: str = ""
+    latitude: float | None = None
+    longitude: float | None = None
 
     model_config = {"from_attributes": True}
 
