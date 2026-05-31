@@ -16,7 +16,8 @@ def _image_to_base64(path: str) -> str | None:
 def to_response(obj: CulturalObject) -> ObjectResponse:
     return ObjectResponse(
         id=obj.id,
-        name=obj.name,
+        class_name=obj.class_name,
+        name=obj.name or "",
         description=obj.description or "",
         address=obj.address or "",
         year_built=obj.year_built,

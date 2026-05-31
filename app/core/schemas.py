@@ -31,7 +31,8 @@ class UserResponse(BaseModel):
 
 class ObjectResponse(BaseModel):
     id: int
-    name: str
+    class_name: str
+    name: str = ""
     description: str = ""
     address: str = ""
     year_built: int | None = None

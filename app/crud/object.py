@@ -14,6 +14,6 @@ async def get_object_by_id(db: AsyncSession, obj_id: int) -> CulturalObject | No
     return result.scalar_one_or_none()
 
 
-async def get_object_by_name(db: AsyncSession, name: str) -> CulturalObject | None:
-    result = await db.execute(select(CulturalObject).where(CulturalObject.name == name))
+async def get_object_by_class_name(db: AsyncSession, class_name: str) -> CulturalObject | None:
+    result = await db.execute(select(CulturalObject).where(CulturalObject.class_name == class_name))
     return result.scalar_one_or_none()

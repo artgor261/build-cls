@@ -21,7 +21,8 @@ class CulturalObject(Base):
     __tablename__ = "cultural_objects"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String(255), unique=True, nullable=False, index=True)
+    class_name = Column(String(255), unique=True, nullable=False, index=True)
+    name = Column(String(255), default="", nullable=False)
     description = Column(Text, default="")
     address = Column(String(255), default="")
     year_built = Column(Integer, nullable=True)

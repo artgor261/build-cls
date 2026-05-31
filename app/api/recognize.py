@@ -5,7 +5,7 @@ from PIL import Image
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.config import settings
-from app.crud.object import get_object_by_name
+from app.crud.object import get_object_by_class_name
 from app.core.database import get_db
 from app.core.schemas import RecognizeResponse
 from app.services.classifier import predict
@@ -29,7 +29,7 @@ async def recognize(file: UploadFile, db: AsyncSession = Depends(get_db)):
 
     class_id = predict(image)
     class_name = label_encoder.inverse_transform([class_id])[0]
-    obj = await get_object_by_name(db, class_name)
+    obj = await get_object_by_class_name(db, class_name)
 
     return RecognizeResponse(
         class_name=class_name,
